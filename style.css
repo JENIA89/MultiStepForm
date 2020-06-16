@@ -289,7 +289,6 @@ form .page .btns button.next {
 
 .progres-bar .step .check {
   position: absolute;
-
   left: 10%;
   top: 55%;
   font-size: 15px;
@@ -418,7 +417,6 @@ form .page .btns button.next {
   .progres-bar .step .bullet::before,
   .progres-bar .step .bullet::after {
     right: -132px;
-
     width: 73px;
   }
   .progres-bar .step .check {
@@ -562,86 +560,3 @@ form .page .btns button.next {
     color: #1c194d;
   }
 }
-/* 
-@media (max-width: 992px) {
-  
-
- 
-
-  .progress-bar .step .check {
-    position: absolute;
-    left: 50%;
-    top: 55%;
-    font-size: 15px;
-    transform: translate(-50%, -50%);
-    display: none;
-  }
-
-  .page1-container {
-    width: 70%;
-    margin: 0 auto;
-  }
-
-  .language {
-    margin: 0 auto;
-    width: 22%;
-    display: flex;
-    flex-direction: column;
-    font-size: 18px;
-    line-height: 285%;
-  }
-
-  .title,
-  .title-step2 {
-    margin-bottom: 70px;
-    margin-top: 50px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 170%;
-  }
-
-  .main-step2 {
-    width: 90%;
-
-    display: grid;
-    grid-template-columns: 50% 50%;
-    text-align: start;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 768px) {
-  
-  .language {
-    margin: 0 auto;
-    width: 51%;
-    display: flex;
-    flex-direction: column;
-    font-size: 18px;
-    line-height: 285%;
-  }
-
-  .form-price {
-    display: none;
-  }
-
-  .little-price {
-    margin: 0 auto;
-    width: 51%;
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 285%;
-  }
-
-  .little-price label {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 285%;
-    color: #44425e;
-  }
-} */
