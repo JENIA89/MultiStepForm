@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    /> -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>MultiStepForm</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="progres-bar">
+        <div class="step">
+          <div class="bullet">
+            <span>1</span>
+          </div>
+          <p>Contact info</p>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <div class="bullet">
+            <span>2</span>
+          </div>
+          <p>Services</p>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <div class="bullet">
+            <span>3</span>
+          </div>
+          <p>Your Budget</p>
+          <div class="check fas fa-check"></div>
+        </div>
+      </div>
+      <div class="form-outer">
+        <form action="#">
+          <div class="page slidepage">
+            <div class="page1-container">
+              <div class="field">
+                <div class="label">Vorname</div>
+                <input type="text" placeholder="Vorname" />
+              </div>
+              <div class="field">
+                <div class="label">Nachname</div>
+                <input type="text" placeholder="Nachname" />
+              </div>
+              <div class="field">
+                <div class="label">E-Mail</div>
+                <input type="text" placeholder="E-Mail" />
+              </div>
+              <div class="field">
+                <div class="label">
+                  Unternehmenswebsite (Falls vorhanden)
+                </div>
+                <input type="text" placeholder="URL" />
+              </div>
+              <div class="field">
+                <div class="label">
+                  Beschreiben Sie uns kurz Ihre Problemstellung?
+                </div>
+                <textarea
+                  type="text"
+                  placeholder="Kurze Beschreibung"
+                ></textarea>
+              </div>
+              <div class="field nextBtn">
+                <button class="next1">Next</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="title-step2">
+              Wobei können wir Sie unterstützen?
+            </div>
+            <div class="main-step2">
+              <input type="checkbox" id="check1" name="check1" />
+              <label for="check1">Branding</label>
+              <input type="checkbox" id="check2" name="check2" />
+              <label for="check2">Server & Domain Support</label>
+              <input type="checkbox" id="check3" name="check3" />
+              <label for="check3">Website Erstellung</label>
+              <input type="checkbox" id="check4" name="check4" />
+              <label for="check4">Website Optimierung </label>
+              <input type="checkbox" id="check5" name="check5" />
+              <label for="check5">Content Marketing</label>
+              <input type="checkbox" id="check6" name="check6" />
+              <label for="check6">SEO</label>
+
+              <input type="checkbox" id="check7" name="check" />
+              <label for="check7">Social Media Monitoring</label>
+              <input type="checkbox" id="check8" name="check" />
+              <label for="check8">Facebook & Google Ads</label>
+              <input type="checkbox" id="check9" name="check" />
+              <label for="check9">iOS & Android App Entwicklung</label>
+              <input type="checkbox" id="check10" name="check" />
+              <label for="check10">Funnel Building</label>
+              <input type="checkbox" id="check11" name="check" />
+              <label for="check11">E-Mail Automation</label>
+              <input type="checkbox" id="check12" name="check" />
+              <label for="check13">Public Relation</label>
+
+              <input type="checkbox" id="check13" name="check" />
+              <label for="check13">Umsatzsteigerung</label>
+              <input type="checkbox" id="check14" name="check" />
+              <label for="check14">Brandbekanntheit steigern</label>
+              <input type="checkbox" id="check15" name="check" />
+              <label for="check15">Website optimieren</label>
+              <input type="checkbox" id="check16" name="check" />
+              <label for="check16">Mehr E-Commerce Umsat</label>
+              <input type="checkbox" id="check17" name="check" />
+              <label for="check17">Online Marketing</label>
+              <input type="checkbox" id="check18" name="check" />
+              <label for="check18">Reputation / Persönlicher Brand</label>
+            </div>
+
+            <div class="field btns">
+              <button class="prev-1 prev">
+                <img class="btn__arrow" src="./assets/Arrow.svg" alt="Arrow" />
+                Back
+              </button>
+              <button class="next-1 next">Next</button>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="title">
+              Welche Sprachen sind für Sie interessant?
+            </div>
+            <div class="main-step3">
+              <div class="language">
+                <input type="checkbox" id="check19" name="check" />
+                <label for="check19">Deutsch</label>
+                <input type="checkbox" id="check20" name="check" />
+                <label for="check20">Englisch</label>
+                <input type="checkbox" id="check21" name="check" />
+                <label for="check21">Russisch</label>
+              </div>
+            </div>
+            <div class="form-price">
+              <form>
+                <div class="form-group">
+                  <label for="formControlRange">Wie hoch ist Ihr Budget?</label>
+                  <output name="ageOutputName" id="ageOutputId">8.000 Є</output>
+                  <input
+                    type="range"
+                    class="form-control-range"
+                    id="formControlRange"
+                    min="0"
+                    max="70000"
+                    step="1000"
+                    value="8000"
+                    oninput="ageOutputId.value =
+                  formControlRange.value  + ' ' + 'Є' "
+                  />
+                </div>
+                <div class="price">
+                  <div class="choose">
+                    <img src="./assets/Vector.svg" alt="vector" />
+                    <p>5.000 Є</p>
+                  </div>
+                  <div class="choose">
+                    <img src="./assets/Vector.svg" alt="vector" />
+                    <p>10.000 Є</p>
+                  </div>
+                  <div class="choose">
+                    <img src="./assets/Vector.svg" alt="vector" />
+                    <p>50.000 Є</p>
+                  </div>
+                  <div class="choose__text">
+                    <img src="./assets/Vector.svg" alt="vector" />
+                    <p>
+                      kann ich noch nicht sagen, möchte zuerst persönlich
+                      darüber sprechen
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="little-price">
+              <h3>Wie hoch ist Ihr Budget?</h3>
+              <input type="checkbox" id="check19" name="check" />
+              <label for="check19">less than 5.000 Є</label>
+              <input type="checkbox" id="check20" name="check" />
+              <label for="check20">5.000 Є - 10.000 Є</label>
+              <input type="checkbox" id="check21" name="check" />
+              <label for="check21">10.000 Є - 50.000 Є</label>
+              <input type="checkbox" id="check22" name="check" />
+              <label for="check22">more than 50.000 Є</label>
+              <input type="checkbox" id="check23" name="check" />
+              <label for="check23"
+                >kann ich noch nicht sagen, möchte zuerst persönlich darüber
+              </label>
+            </div>
+            <div class="rules">
+              <input type="checkbox" id="check22" name="check22" />
+              <label for="check22"
+                >Ich labe die <span>Datensshutzerklarung</span> zur
+                Kesfsvsfvvaea
+              </label>
+            </div>
+            <div class="field btns">
+              <button class="prev-2 prev">
+                <img
+                  class="btn__arrow"
+                  src="./assets/Arrow.svg"
+                  alt="Arrow"
+                />Back
+              </button>
+              <button class="submit next">Absenden</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

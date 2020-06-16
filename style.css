@@ -1,0 +1,647 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #f6f6f8;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.container .form-outer {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.main-step2 {
+  width: 950px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  text-align: start;
+  margin: 0 auto;
+}
+
+.main-step2 label {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 285%;
+  color: #44425e;
+}
+
+.language {
+  text-align: start;
+  margin: 0 auto;
+  width: 16%;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.language label {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 285%;
+  color: #44425e;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label:before {
+  content: "\2714";
+  color: transparent;
+  display: inline-block;
+  border: 3px solid #1c194d;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 22px;
+  margin: 7px 6px 12px 20px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  vertical-align: middle;
+  transition: color ease 0.3s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  color: #1c194d;
+  border-color: #1c194d;
+}
+
+.main-step3 {
+  display: flex;
+  width: 100%;
+}
+
+.page1-container {
+  width: 467px;
+  margin: 0 auto;
+}
+
+.form-outer form {
+  display: flex;
+  width: 400%;
+}
+
+.form-outer form .page {
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.form-outer form .page .field {
+  width: 100%;
+  height: 63px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+.title,
+.title-step2 {
+  margin-bottom: 70px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 170%;
+  color: #1c194d;
+}
+
+.form-outer form .page .field .label {
+  position: absolute;
+  top: -30px;
+  color: #44425e;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.form-outer form .page .field input {
+  height: 100%;
+  width: 100%;
+  border: lightgrey;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 15px;
+}
+
+.form-outer form .page .field textarea {
+  width: 100%;
+  height: 156px;
+  border: lightgrey;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.form-outer form .page .field button {
+  width: 100%;
+  height: calc(100% + 5px);
+  margin-top: 85px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form-outer form .page .btns button {
+  margin-top: -10px !important;
+}
+
+form .page .btns button.prev {
+  margin-right: 3px;
+  font-size: 17px;
+  background: #f6f6f8;
+  color: #44425e;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+form .page .btns button.next {
+  margin-left: 130px;
+}
+.next1,
+.next-1,
+.submit {
+  background: #f08630;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.btn__arrow {
+  margin-right: 15px;
+}
+
+.container .progres-bar {
+  display: flex;
+  width: 890px;
+  height: 55px;
+  margin: 70px auto;
+}
+
+.container .progres-bar .step {
+  position: relative;
+  text-align: center;
+  display: flex;
+  width: 35%;
+}
+
+.progres-bar .step p {
+  color: #44425e;
+  margin: 15px;
+  transition: 0.2s;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.progres-bar .step p.active {
+  color: #1c194d;
+}
+
+.progres-bar .step .bullet {
+  position: relative;
+  height: 55px;
+  width: 55px;
+  display: inline-block;
+  border-radius: 50%;
+  transition: 0.2s;
+  background: #dbdde7;
+}
+
+.progres-bar .step .bullet.active {
+  border-color: #1c194d;
+  background: #1c194d;
+}
+
+.progres-bar .step:last-child .bullet::before,
+.progres-bar .step:last-child .bullet::after {
+  display: none;
+}
+
+.progres-bar .step .bullet::before,
+.progres-bar .step .bullet::after {
+  position: absolute;
+  content: "";
+  bottom: 23px;
+  right: -223px;
+  height: 3px;
+  width: 60px;
+  background: #cecece;
+}
+
+.progres-bar .step .bullet.active::after {
+  background: #1c194d;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progres-bar .step .bullet span {
+  position: absolute;
+  left: 50%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 56px;
+  transform: translateX(-52%);
+}
+
+.progres-bar .step .bullet.active span {
+  display: none;
+}
+
+.progres-bar .step .check {
+  position: absolute;
+
+  left: 10%;
+  top: 55%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.progres-bar .step .check.active {
+  display: block;
+  color: #fff;
+}
+
+.form-group {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 170%;
+  color: #1c194d;
+}
+
+.form-group .form-control-range {
+  width: 90%;
+  height: 5px;
+  margin: 0 auto;
+}
+
+.price {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.choose {
+  width: 23%;
+  margin-top: 10px;
+}
+
+.choose p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170%;
+  color: #44425e;
+}
+
+.choose__text {
+  margin-top: 10px;
+  width: 30%;
+}
+
+.choose__text p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170%;
+  color: #44425e;
+}
+
+.rules {
+  margin-top: 60px;
+  color: #1c194d;
+}
+
+.rules span {
+  color: #f08630;
+}
+
+.rules label {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.form-price {
+  display: block;
+}
+
+.little-price {
+  display: none;
+}
+
+#ageOutputId {
+  margin-bottom: 25px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 285%;
+  color: #1c194d;
+}
+
+.f @media screen and (max-width: 1200px) {
+  .page1-container {
+    width: 467px;
+  }
+
+  .main-step2 {
+    width: 945px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container .progres-bar {
+    width: 769px;
+  }
+  .container .progres-bar .step {
+    position: relative;
+    text-align: center;
+    width: 35%;
+    display: block;
+  }
+  .progres-bar .step .bullet::before,
+  .progres-bar .step .bullet::after {
+    right: -132px;
+
+    width: 73px;
+  }
+  .progres-bar .step .check {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  .page1-container {
+    width: 447px;
+  }
+
+  .main-step2 {
+    width: 700px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: start;
+    margin: 0 auto;
+  }
+  .language {
+    text-align: center;
+    margin: 0 auto;
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 285%;
+  }
+
+  .title,
+  .title-step2 {
+    margin-bottom: 70px;
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container .progres-bar {
+    width: 530px;
+  }
+  .page1-container {
+    width: 355px;
+  }
+  .progres-bar .step .bullet::before,
+  .progres-bar .step .bullet::after {
+    right: -96px;
+    width: 46px;
+  }
+  .form-outer form .page .field .label {
+    font-size: 14px;
+  }
+  .main-step2 {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: start;
+    margin: 0 auto;
+  }
+
+  .language {
+    text-align: center;
+  }
+
+  .title,
+  .title-step2 {
+    margin-bottom: 70px;
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container .progres-bar {
+    width: 381px;
+    margin-bottom: 106px;
+  }
+  .page1-container {
+    width: 300px;
+  }
+
+  .progres-bar .step .bullet::before,
+  .progres-bar .step .bullet::after {
+    right: -55px;
+    width: 31px;
+  }
+
+  .form-outer form .page .field .label {
+    line-height: 100%;
+  }
+
+  .main-step2 {
+    width: 322px;
+  }
+
+  .main-step3 {
+    display: flex;
+    width: 75%;
+  }
+
+  .language {
+    text-align: start;
+  }
+
+  .form-price {
+    display: none;
+  }
+
+  .little-price {
+    margin: 0 auto;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 285%;
+  }
+
+  .little-price label {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 285%;
+    color: #44425e;
+  }
+
+  .little-price h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+    text-align: start;
+    color: #1c194d;
+  }
+}
+/* 
+@media (max-width: 992px) {
+  
+
+ 
+
+  .progress-bar .step .check {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  .page1-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .language {
+    margin: 0 auto;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 285%;
+  }
+
+  .title,
+  .title-step2 {
+    margin-bottom: 70px;
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+  }
+
+  .main-step2 {
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: start;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .language {
+    margin: 0 auto;
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 285%;
+  }
+
+  .form-price {
+    display: none;
+  }
+
+  .little-price {
+    margin: 0 auto;
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 285%;
+  }
+
+  .little-price label {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 285%;
+    color: #44425e;
+  }
+} */
