@@ -496,17 +496,17 @@ form .page .btns button.next {
 }
 @media screen and (max-width: 576px) {
   .container .progres-bar {
-    width: 381px;
+    width: 306px;
     margin-bottom: 106px;
   }
   .page1-container {
-    width: 300px;
+    width: 243px;
   }
 
   .progres-bar .step .bullet::before,
   .progres-bar .step .bullet::after {
-    right: -55px;
-    width: 31px;
+    right: -38px;
+    width: 23px;
   }
 
   .form-outer form .page .field .label {
@@ -514,12 +514,17 @@ form .page .btns button.next {
   }
 
   .main-step2 {
-    width: 322px;
+    width: 313px;
+  }
+
+  .title,
+  .title-step2 {
+    font-size: 16px;
   }
 
   .main-step3 {
     display: flex;
-    width: 75%;
+    width: 100%;
   }
 
   .language {
